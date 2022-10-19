@@ -13,11 +13,3 @@ int main(void)
 	
 	return 0;
 }
-
-// defining _putchar function
-int _putchar()
-{
-	puts("_putchar \n");
-
-	return 0;
-}
