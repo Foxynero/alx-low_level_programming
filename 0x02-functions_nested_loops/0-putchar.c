@@ -6,10 +6,9 @@
  * Return: Always 0 (Success)
  */
 
-int _putchar(); // function prototype
 int main(void)
 {
-	_putchar(); // function called in int main(void)
+	printf("_putchar\n");
 	
 	return 0;
 }
