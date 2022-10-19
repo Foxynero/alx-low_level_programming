@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prints the alphabet, in lowercase with _putchar.
+ * print_alphabet - prints the lowercase alphabets with _putchar.
  *
  * Return: void
  */
@@ -9,7 +9,6 @@
 void print_alphabet(void)
 {
 	char alphabet = 'a';
-	
 	while (alphabet < 123)
 	{
 		_putchar(alphabet);
