@@ -1,4 +1,4 @@
-#include "main.c"
+#include <stdio.h>
 
 /**
  * main - prints _putchar, followed by a new line
@@ -6,17 +6,18 @@
  * Return: Always 0 (Success)
  */
 
+int _putchar(); // function prototype
 int main(void)
 {
-	int i;
-	char c[] = "_putchar";
+	_putchar(); // function called in int main(void)
+	
+	return 0;
+}
 
-	for (i = 0; i <= 7; i++)
-	{
-	_putchar(c[i]);
-	}
+// defining _putchar function
+int _putchar()
+{
+	puts("_putchar \n");
 
-	_putchar('\n');
-
-	return (0);
+	return 0;
 }
