@@ -2,17 +2,16 @@
 
 /**
  * _isdigit -  checks for a digit
- * @c: the digit to be checked
+ * @c: the character to be checked
  *
  * Return: 1 if the character is a digit, otherwise 0
  */
 
 int _isdigit(int c)
 {
-	char c;
+	if (c >= '0' && c <= '9')
+		return (1);
 
-	if (c >= 0 && c =< 9);
-	printf("%d", c);
-
-	return (0);
+	else
+		return (0);
 }
