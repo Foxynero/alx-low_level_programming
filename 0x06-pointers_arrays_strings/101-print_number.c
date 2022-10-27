@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * print_number - takes an integer and prints it with _putchar
- * @n: integer to print
+ * print_number - function with one argument
+ * @n: int type argument
  *
  * Description: prints an integer
  * Return: value of n
  */
-
 void print_number(int n)
 {
 	if (n < 0)
