@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -6,17 +7,20 @@
  * @c: character
  *
  * Return: pointer to the first occurrence
+ * @s. Return NULL if the character isn't found
  */
 
 char *_strchr(char *s, char c)
 {
 	while (*s)
 	{
-		if (*s == c)
+		if (*s != c)
+			s++;
+		else
 			return (s);
-		s++;
 	}
-	if (*s == c)
-			return (s);
-		return (0);
+	if (c == '\0')
+		return (s);
+	
+	return (NULL);
 }
