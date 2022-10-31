@@ -6,27 +6,20 @@
  * @a: integer matrix
  * @size: square size of matrix
  *
- * Return: void
+ * Return: value
  */
 
 void print_diagsums(int *a, int size)
 {
-	int n = 0, sum = 0;
-	int *p = a;
+	int i, sum1, sum2;
 
-	for (n = size; n > 0; n--)
-	{
-		sum += *p;
-		p += size + 1;
-	}
-	printf("%d, ", sum);
+	sum1 = 0;
+	sum2 = 0;
 
-	sum = 0;
-	p = a + size - 1;
-	for (n = size; n > 0; n--)
+	for (i = 0; i < size; i++)
 	{
-		sum += *p;
-		p += size - 1;
+		sum1 += *(a + i * (size + 1));
+		sum2 += *(a + (i + 1) * (size - 1));
 	}
-	printf("%d\n", sum);
+	printf("%d, %d\n", sum1, sum2);
 }
