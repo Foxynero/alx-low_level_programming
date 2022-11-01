@@ -3,10 +3,11 @@
 
 /**
  * _strchr -  locates a character in a string
- * @s: string
- * @c: character
+ * 
+ * @s: string to check
+ * @c: character we are looking for
  *
- * Return: pointer to the first occurrence
+ * Return: a pointer to the first occurance of the character @c in the string
  * @s. Return NULL if the character isn't found
  */
 
