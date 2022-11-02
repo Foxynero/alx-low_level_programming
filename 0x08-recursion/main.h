@@ -27,6 +27,4 @@ int is_palindrome(char *s);
 
 int wildcmp(char *s1, char *s2);
 
-int prime_finder(int x, int y);
-
 #endif /* _main_h_ */
