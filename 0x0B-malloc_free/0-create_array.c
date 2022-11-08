@@ -6,8 +6,7 @@
  * @size: an array of chars
  * @c: specific char to print
  *
- * Return: NULL if size = 0
- * Return: a pointer to the array
+ * Return: NULL if size = 0, else a pointer to the array
  */
 
 char *create_array(unsigned int size, char c)
