@@ -1,46 +1,48 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * string_nconcat - concatenates two strings.
- * @s1: first string
- * @s2: second string
- * @n: limit of s2
- * Return: pointer to new space in memory or null
+ * string_nconcat - function to concatnate strings with n bytes
+ * @s1: destination for concatnation
+ * @s2: source of string
+ * @n: int type for size of byte
+ * Return: pointer to new memory allocated
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, k, e;
-	int coun1 = 0;
-	char *q;
+	int count, count1;
+	int sign = n;
+	char *ptr;
+	int len1, len2;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		coun1 = coun1 + 1;
-	}
 
-	q = malloc(sizeof(*q) * (coun1 + n + 1));
-	if (q == NULL)
+	for (len1 = 0; s1[len1] != '\0'; len1++)
+		;
+	for (len2 = 0; s2[len2] != '\0'; len2++)
+		;
+
+	if (sign >= len2)
 	{
+		sign = len2;
+		ptr = malloc(sizeof(char) * (len1 + len2 + 1));
+	}
+	else
+		ptr = malloc(sizeof(char) * (len1 + n + 1));
+	if (ptr == NULL)
 		return (NULL);
-	}
-	for (k = 0; s1[k] != '\0'; k++)
+	for (count = 0; count < len1; count++)
 	{
-		q[k] = s1[k];
+		ptr[count] = s1[count];
 	}
-	for (e = 0; s2[e] != '\0' && e < n; e++, k++)
+	for (count1 = 0; count1 < sign; count1++)
 	{
-		q[k] = s2[e];
+		ptr[count++] = s2[count1];
 	}
-	q[k] = '\0';
-	return (q);
+	ptr[count++] = '\0';
+	return (ptr);
 }
