@@ -1,5 +1,5 @@
-#ifndef _dog_h_
-#define _dog_h_
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
  * struct dog - A new type describing a dog.
@@ -33,4 +33,4 @@ dog_t *new_dog(char *name, float age, char *owner);
 
 void free_dog(dog_t *d);
 
-#endif /* _dog_h_ */
+#endif /* _DOG_H_ */
