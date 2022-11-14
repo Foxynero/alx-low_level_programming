@@ -1,14 +1,13 @@
+#include <stdlib.h>
 #include "dog.h"
-#include <stdio.h>
 /**
- * init_dog - function with 4 arguments
- * @d: structure pointer
- * @name: pointer character
- * @age: float type argument
- * @owner: pointer type character
+ * init_dog - intializes a variable of type struct dog
+ * @d: the structure to initialize
+ * @name: the name of the dog
+ * @age: the age of the dog
+ * @owner: the owner of the dog
  *
- * Description: initialize a variable of type
- * Return: na
+ * Return: nothing
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
