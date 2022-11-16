@@ -1,5 +1,7 @@
-#ifndef _FUNCTION_POINTERS_H_
-#define _FUNCTION_POINTERS_H_
+#ifndef ASSIGN_0x0E
+#define ASSIGN_0x0E
+
+#include <stddef.h>
 
 int _putchar(char c);
 
