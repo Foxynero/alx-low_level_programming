@@ -1,5 +1,4 @@
 #include "3-calc.h"
-#include <stdio.h>
 
 /**
  * op_add - add function
@@ -60,4 +59,3 @@ int op_mod(int a, int b)
 {
 	return (a % b);
 }
-
