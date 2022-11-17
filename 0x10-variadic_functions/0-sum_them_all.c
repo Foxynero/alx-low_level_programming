@@ -1,4 +1,8 @@
 #include "variadic_functions.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdarg.h>
+
 
 /**
   * sum_them_all - ...
@@ -6,6 +10,7 @@
   *
   * Return: ...
   */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list args;
