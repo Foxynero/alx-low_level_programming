@@ -1,21 +1,19 @@
 #include "variadic_functions.h"
-#include <stdlib.h>
-#include <stdio.h>
 #include <stdarg.h>
-
+#include <stdio.h>
+#include <stdlib>
 
 /**
-  * sum_them_all - ...
-  * @n: ...
-  *
-  * Return: ...
-  */
+ * sum_them_all - ...
+ * @n: ...
+ *
+ * Return: ...
+ */
 
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list args;
 	unsigned int i = 0;
-	int sum = 0;
 
 	if (n != 0)
 	{
@@ -30,6 +28,5 @@ int sum_them_all(const unsigned int n, ...)
 		va_end(args);
 		return (sum);
 	}
-
 	return (0);
 }
