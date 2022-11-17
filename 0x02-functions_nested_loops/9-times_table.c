@@ -6,7 +6,7 @@
  * Description: using for loops to create table and multiples
  * Return: result
  */
-void print_times_table(void)
+void times_table(void)
 {
 	int i, j, result;
 
