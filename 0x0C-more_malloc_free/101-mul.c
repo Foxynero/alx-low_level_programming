@@ -142,6 +142,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
  * @next_prod: The next product to be added.
  * @next_len: The length of next_prod.
  */
+
 void add_nums(char *final_prod, char *next_prod, int next_len)
 {
 	int num, tens = 0;
@@ -195,7 +196,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		putchar("Error\n");
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -205,7 +206,7 @@ int main(int argc, char *argv[])
 		argv[2] = iterate_zeroes(argv[2]);
 	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
-		putchar("0\n");
+		printf("0\n");
 		return (0);
 	}
 
