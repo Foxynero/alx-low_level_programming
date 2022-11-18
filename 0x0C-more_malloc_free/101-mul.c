@@ -187,6 +187,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
  *              contains non-digits, the function exits with a status of 98.
  * Return: Always 0.
  */
+
 int main(int argc, char *argv[])
 {
 	char *final_prod, *next_prod;
@@ -194,7 +195,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		putchar("Error\n");
 		exit(98);
 	}
 
@@ -204,7 +205,7 @@ int main(int argc, char *argv[])
 		argv[2] = iterate_zeroes(argv[2]);
 	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
-		printf("0\n");
+		putchar("0\n");
 		return (0);
 	}
 
