@@ -9,11 +9,12 @@
 
 int get_endianness(void)
 {
-	int num = 1;
-	char *endian = (char *)&num;
+	int num;
+	char *adrs;
 
-	if (*endian == 1)
+	num = 2;
+	adrs = (char *)&num;
+	if (*adrs)
 		return (1);
-
 	return (0);
 }
