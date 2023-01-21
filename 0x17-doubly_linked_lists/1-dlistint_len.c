@@ -6,15 +6,15 @@
  *
  * Return: The number of elements in the dlistint_t list.
  */
+
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t nodes = 0;
+	unsigned int length = 0;
 
-	while (h)
+	while (h != NULL)
 	{
-		nodes++;
 		h = h->next;
+		length++;
 	}
-
-	return (nodes);
+	return (length);
 }
