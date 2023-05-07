@@ -1,1 +1,1 @@
-More on memory allocation and free
+More on memory allocation and free - Foster Adu-Gyamfi
