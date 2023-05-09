@@ -1,1 +1,1 @@
-ALX project on hash tables
+ALX project on hash tables by Foster Adu-Gyamfi
